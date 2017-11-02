@@ -3381,45 +3381,48 @@ function install(name, mainModule) {                                            
                                                                                                                        // 31
 install("meteor");                                                                                                     // 32
 install("underscore");                                                                                                 // 33
-install("modules-runtime");                                                                                            // 34
-install("modules", "meteor/modules/client.js");                                                                        // 35
-install("babel-compiler");                                                                                             // 36
-install("ecmascript");                                                                                                 // 37
-install("base64");                                                                                                     // 38
+install("babel-compiler");                                                                                             // 34
+install("ecmascript");                                                                                                 // 35
+install("ddp-rate-limiter");                                                                                           // 36
+install("modules-runtime");                                                                                            // 37
+install("modules", "meteor/modules/client.js");                                                                        // 38
 install("ecmascript-runtime");                                                                                         // 39
 install("promise", "meteor/promise/client.js");                                                                        // 40
 install("babel-runtime", "meteor/babel-runtime/babel-runtime.js");                                                     // 41
 install("ecmascript-runtime-client", "meteor/ecmascript-runtime-client/runtime.js");                                   // 42
-install("ejson", "meteor/ejson/ejson.js");                                                                             // 43
-install("check", "meteor/check/match.js");                                                                             // 44
-install("random");                                                                                                     // 45
-install("tracker");                                                                                                    // 46
-install("retry");                                                                                                      // 47
-install("id-map");                                                                                                     // 48
-install("callback-hook");                                                                                              // 49
-install("ddp-common");                                                                                                 // 50
-install("diff-sequence");                                                                                              // 51
-install("mongo-id");                                                                                                   // 52
-install("ddp-client", "meteor/ddp-client/namespace.js");                                                               // 53
-install("ddp");                                                                                                        // 54
-install("geojson-utils", "meteor/geojson-utils/main.js");                                                              // 55
-install("ordered-dict");                                                                                               // 56
-install("minimongo", "meteor/minimongo/minimongo_client.js");                                                          // 57
-install("ddp-server");                                                                                                 // 58
-install("allow-deny");                                                                                                 // 59
-install("mongo-dev-server");                                                                                           // 60
-install("mongo");                                                                                                      // 61
-install("reactive-var");                                                                                               // 62
-install("url");                                                                                                        // 63
-install("http");                                                                                                       // 64
-install("ostrio:cookies", "meteor/ostrio:cookies/cookies.js");                                                         // 65
-install("ostrio:files", "meteor/ostrio:files/client.js");                                                              // 66
-install("ddp-rate-limiter");                                                                                           // 67
-install("localstorage");                                                                                               // 68
-install("accounts-base", "meteor/accounts-base/client_main.js");                                                       // 69
-install("arunoda:streams");                                                                                            // 70
-install("service-configuration");                                                                                      // 71
-                                                                                                                       // 72
+install("random");                                                                                                     // 43
+install("localstorage");                                                                                               // 44
+install("tracker");                                                                                                    // 45
+install("callback-hook");                                                                                              // 46
+install("reactive-var");                                                                                               // 47
+install("base64");                                                                                                     // 48
+install("ejson", "meteor/ejson/ejson.js");                                                                             // 49
+install("check", "meteor/check/match.js");                                                                             // 50
+install("retry");                                                                                                      // 51
+install("id-map");                                                                                                     // 52
+install("ddp-common");                                                                                                 // 53
+install("diff-sequence");                                                                                              // 54
+install("mongo-id");                                                                                                   // 55
+install("ddp-client", "meteor/ddp-client/namespace.js");                                                               // 56
+install("ddp");                                                                                                        // 57
+install("geojson-utils", "meteor/geojson-utils/main.js");                                                              // 58
+install("ordered-dict");                                                                                               // 59
+install("minimongo", "meteor/minimongo/minimongo_client.js");                                                          // 60
+install("ddp-server");                                                                                                 // 61
+install("allow-deny");                                                                                                 // 62
+install("mongo-dev-server");                                                                                           // 63
+install("mongo");                                                                                                      // 64
+install("accounts-base", "meteor/accounts-base/client_main.js");                                                       // 65
+install("sha");                                                                                                        // 66
+install("srp");                                                                                                        // 67
+install("accounts-password");                                                                                          // 68
+install("url");                                                                                                        // 69
+install("http");                                                                                                       // 70
+install("ostrio:cookies", "meteor/ostrio:cookies/cookies.js");                                                         // 71
+install("ostrio:files", "meteor/ostrio:files/client.js");                                                              // 72
+install("arunoda:streams");                                                                                            // 73
+install("service-configuration");                                                                                      // 74
+                                                                                                                       // 75
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 },"process.js":function(require,exports,module){
@@ -31770,14 +31773,14 @@ if (typeof Package === 'undefined') Package = {};
 })();
 /* Imports for global scope */
 
+Accounts = Package['accounts-base'].Accounts;
+DDP = Package['ddp-client'].DDP;
 Meteor = Package.meteor.Meteor;
 global = Package.meteor.global;
 meteorEnv = Package.meteor.meteorEnv;
-_ = Package.underscore._;
-DDP = Package['ddp-client'].DDP;
 Mongo = Package.mongo.Mongo;
+FilesCollection = Package['ostrio:files'].FilesCollection;
 Tracker = Package.tracker.Tracker;
 Deps = Package.tracker.Deps;
-FilesCollection = Package['ostrio:files'].FilesCollection;
-Accounts = Package['accounts-base'].Accounts;
+_ = Package.underscore._;
 

@@ -1,8 +1,9 @@
-meteor
-underscore
-ddp
-mongo
-tracker
-ostrio:files
 accounts-base
+accounts-password
+ddp
+meteor
+mongo
+ostrio:files
+tracker
+underscore
 arunoda:streams
