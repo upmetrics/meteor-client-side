@@ -37,33 +37,57 @@ mkdir $OUTPUT_PATH
 
 # Concat files
 cat "$PACKAGES_PATH/underscore.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PROJECT_ROOT/meteor-runtime-config.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/meteor-runtime-config.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/meteor.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/tracker.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/base64.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/reactive-var.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/modules-runtime.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/modules.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/promise.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/babel-runtime.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/ecmascript-runtime.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/ecmascript.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/base64.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/ejson.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/jquery.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/check.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/promise.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/ecmascript-runtime.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/ecmascript.js">> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/babel-compiler.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/babel-runtime.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/random.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/tracker.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/retry.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/id-map.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/ordered-dict.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/geojson-utils.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/retry.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/ddp-common.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/diff-sequence.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/mongo-id.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/minimongo.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/ddp-common.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/ddp-client.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/ddp.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/ddp-common.js " >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/ordered-dict.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/geojson-utils.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/minimongo.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/ddp-server.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/allow-deny.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/ddp-rate-limiter.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/localstorage.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/callback-hook.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/jquery.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/deps.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/htmljs.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/observe-sequence.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/sha.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/srp.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/blaze.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/mongo.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/accounts-base.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/accounts-password.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/coffeescript.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/url.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/http.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/spacebars.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/templating.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/ostrio_cookies.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/ostrio_files.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/global-imports.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/service-configuration.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/arunoda_streams.js" >> $OUTPUT_PATH/$NAME.bundle.js
+
 
 # Minify
 npm install uglify-js
