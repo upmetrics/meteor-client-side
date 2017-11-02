@@ -3380,9 +3380,9 @@ function install(name, mainModule) {                                            
 // install(<name>) calls for every Meteor package.                                                                     // 30
                                                                                                                        // 31
 install("meteor");                                                                                                     // 32
-install("underscore");                                                                                                 // 33
-install("babel-compiler");                                                                                             // 34
-install("ecmascript");                                                                                                 // 35
+install("babel-compiler");                                                                                             // 33
+install("ecmascript");                                                                                                 // 34
+install("underscore");                                                                                                 // 35
 install("ddp-rate-limiter");                                                                                           // 36
 install("modules-runtime");                                                                                            // 37
 install("modules", "meteor/modules/client.js");                                                                        // 38
@@ -31783,4 +31783,10 @@ FilesCollection = Package['ostrio:files'].FilesCollection;
 Tracker = Package.tracker.Tracker;
 Deps = Package.tracker.Deps;
 _ = Package.underscore._;
+meteorInstall = Package.modules.meteorInstall;
+meteorBabelHelpers = Package['babel-runtime'].meteorBabelHelpers;
+Promise = Package.promise.Promise;
+Symbol = Package['ecmascript-runtime-client'].Symbol;
+Map = Package['ecmascript-runtime-client'].Map;
+Set = Package['ecmascript-runtime-client'].Set;
 
