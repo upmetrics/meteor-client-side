@@ -3417,8 +3417,9 @@ install("ostrio:files", "meteor/ostrio:files/client.js");                       
 install("ddp-rate-limiter");                                                                                           // 67
 install("localstorage");                                                                                               // 68
 install("accounts-base", "meteor/accounts-base/client_main.js");                                                       // 69
-install("service-configuration");                                                                                      // 70
-                                                                                                                       // 71
+install("arunoda:streams");                                                                                            // 70
+install("service-configuration");                                                                                      // 71
+                                                                                                                       // 72
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 },"process.js":function(require,exports,module){
