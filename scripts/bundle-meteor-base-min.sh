@@ -17,7 +17,7 @@ mkdir -p $DIST_PATH
 
 # Create temp meteor project
 rm -rf $BUNDLER_PATH
-meteor create $BUNDLER_PATH
+meteor create $BUNDLER_PATH  --allow-superuser
 
 # Move packages to meteor folder
 cp src/packages $BUNDLER_PATH/.meteor/

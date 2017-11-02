@@ -162,7 +162,7 @@ Autoupdate._retrySubscription = function () {                                   
                 newLink.setAttribute("rel", "stylesheet");                                 // 128
                 newLink.setAttribute("type", "text/css");                                  // 129
                 newLink.setAttribute("class", "__meteor-css__");                           // 130
-                newLink.setAttribute("href", Meteor._relativeToSiteRootUrl(css.url));      // 131
+                newLink.setAttribute("href", css.url);                                     // 131
                 attachStylesheetLink(newLink);                                             // 132
               });                                                                          // 133
             } else {                                                                       // 134
@@ -221,9 +221,9 @@ var Meteor = Package.meteor.Meteor;
 var global = Package.meteor.global;
 var meteorEnv = Package.meteor.meteorEnv;
 var _ = Package.underscore._;
-var Symbol = Package['ecmascript-runtime'].Symbol;
-var Map = Package['ecmascript-runtime'].Map;
-var Set = Package['ecmascript-runtime'].Set;
+var Symbol = Package['ecmascript-runtime-client'].Symbol;
+var Map = Package['ecmascript-runtime-client'].Map;
+var Set = Package['ecmascript-runtime-client'].Set;
 
 /* Package-scope variables */
 var Reload;
@@ -513,12 +513,17 @@ if (typeof Package === 'undefined') Package = {};
 });
 
 })();
-(function () {
+//////////////////////////////////////////////////////////////////////////
+//                                                                      //
+// This is a generated file. You can view the original                  //
+// source in your browser if your browser supports source maps.         //
+// Source maps are supported by all recent versions of Chrome, Safari,  //
+// and Firefox, and by Internet Explorer 11.                            //
+//                                                                      //
+//////////////////////////////////////////////////////////////////////////
 
-/* Imports */
-var Meteor = Package.meteor.Meteor;
-var global = Package.meteor.global;
-var meteorEnv = Package.meteor.meteorEnv;
+
+(function () {
 
 
 
