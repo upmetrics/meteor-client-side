@@ -56,6 +56,7 @@ cat "$PACKAGES_PATH/check.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/random.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/id-map.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/retry.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/localstorage.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/ddp-common.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/diff-sequence.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/mongo-id.js" >> $OUTPUT_PATH/$NAME.bundle.js
