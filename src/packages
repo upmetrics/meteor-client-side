@@ -1,3 +1,4 @@
+ecmascript-runtime-client
 ecmascript
 accounts-base
 accounts-password
@@ -8,3 +9,4 @@ ostrio:files
 tracker
 underscore
 arunoda:streams
+reactive-var
