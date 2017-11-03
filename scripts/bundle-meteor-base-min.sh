@@ -39,6 +39,7 @@ mkdir $OUTPUT_PATH
 cat "$PACKAGES_PATH/underscore.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PROJECT_ROOT/meteor-runtime-config.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/meteor.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/url.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/tracker.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/base64.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/callback-hook.js" >> $OUTPUT_PATH/$NAME.bundle.js
@@ -49,6 +50,7 @@ cat "$PACKAGES_PATH/promise.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/ecmascript-runtime-client.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/ecmascript-runtime.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/ecmascript.js">> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/http.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/babel-compiler.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/babel-runtime.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/ejson.js" >> $OUTPUT_PATH/$NAME.bundle.js

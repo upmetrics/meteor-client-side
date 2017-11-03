@@ -11,3 +11,5 @@ underscore
 arunoda:streams
 reactive-var
 localstorage
+url
+http
