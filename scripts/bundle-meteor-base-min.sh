@@ -50,9 +50,9 @@ cat "$PACKAGES_PATH/promise.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/ecmascript-runtime-client.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/ecmascript-runtime.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/ecmascript.js">> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/http.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/babel-compiler.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/babel-runtime.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/http.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/ejson.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/check.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/random.js" >> $OUTPUT_PATH/$NAME.bundle.js
