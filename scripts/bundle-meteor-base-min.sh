@@ -41,6 +41,7 @@ cat "$PROJECT_ROOT/meteor-runtime-config.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/meteor.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/tracker.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/base64.js" >> $OUTPUT_PATH/$NAME.bundle.js
+cat "$PACKAGES_PATH/callback-hook.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/reactive-var.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/modules-runtime.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/modules.js" >> $OUTPUT_PATH/$NAME.bundle.js
@@ -63,8 +64,7 @@ cat "$PACKAGES_PATH/ordered-dict.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/geojson-utils.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/minimongo.js" >> $OUTPUT_PATH/$NAME.bundle.js 
 cat "$PACKAGES_PATH/allow-deny.js" >> $OUTPUT_PATH/$NAME.bundle.js
-cat "$PACKAGES_PATH/ddp-rate-limiter.js" >> $OUTPUT_PATH/$NAME.bundle.js 
-cat "$PACKAGES_PATH/callback-hook.js" >> $OUTPUT_PATH/$NAME.bundle.js 
+cat "$PACKAGES_PATH/ddp-rate-limiter.js" >> $OUTPUT_PATH/$NAME.bundle.js  
 cat "$PACKAGES_PATH/sha.js" >> $OUTPUT_PATH/$NAME.bundle.js
 cat "$PACKAGES_PATH/srp.js" >> $OUTPUT_PATH/$NAME.bundle.js 
 cat "$PACKAGES_PATH/mongo.js" >> $OUTPUT_PATH/$NAME.bundle.js
