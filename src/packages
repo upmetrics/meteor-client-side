@@ -2,6 +2,7 @@ ecmascript-runtime-client
 ecmascript
 accounts-base
 accounts-password
+accounts-google
 ddp
 meteor
 mongo
